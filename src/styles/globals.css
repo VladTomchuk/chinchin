@@ -1,3 +1,15 @@
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
 /* green - #af9c30; 51, 57%, 44%*/
 /* rosat - #f1d2d3;358, 53%, 88% */
 /* white - #fff9f6;20, 100%, 98% */
