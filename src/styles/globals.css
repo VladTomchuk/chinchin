@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
@@ -8,7 +8,7 @@
     top: 100%;
     left: 0;
   }
-}
+} */
 
 /* green - #af9c30; 51, 57%, 44%*/
 /* rosat - #f1d2d3;358, 53%, 88% */

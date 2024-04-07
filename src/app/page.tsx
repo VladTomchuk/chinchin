@@ -26,53 +26,48 @@ export default function Home() {
     return null;
   }
   return (
-    <Container maxW="container.xl" px={{ base: "0" }}>
+    <Flex
+      flexDirection={{ base: "column", md: "row" }}
+      justify="space-between"
+      align="center"
+      h={{ md: "90vh" }}
+    >
       <Flex
-        flexDirection={{ base: "column", md: "row" }}
-        justify="space-between"
-        align="center"
-        h={{ md: "90vh" }}
-        mt={{ base: "12vh", md: "10vh" }}
+        flexDirection="column"
+        w={{ base: "100%", md: "50%" }}
+        pl={{ md: "7%" }}
+        gap={{ md: "100" }}
       >
-        <Flex
-          flexDirection="column"
-          w={{ base: "100%", md: "50%" }}
-          pl={{ md: "7%" }}
-          gap={{ md: "100" }}
-        >
-          <Flex justify={{ base: "center", md: "start" }}>
-            <Text
-              color={theme.text}
-              fontSize={65}
-              fontWeight={200}
-              lineHeight="1.2"
-            >
-              We are ready <br />
-              to make your <br /> celebration <br />
-              special and <br /> unique
-            </Text>
-          </Flex>
-
-          <Flex justify={{ base: "center", md: "start" }} my={{ base: "15%" }}>
-            <Link href="https://wa.me/34698458286">
-              <Button variant="outline" p={6}>
-                <Text color={theme.accent} fontWeight={600}>
-                  Contact us
-                </Text>
-              </Button>
-            </Link>
-          </Flex>
+        <Flex justify={{ base: "center", md: "start" }}>
+          <Text
+            color={theme.text}
+            fontSize={65}
+            fontWeight={200}
+            lineHeight="1.2"
+          >
+            We are ready <br />
+            to make your <br /> celebration <br />
+            special and <br /> unique
+          </Text>
         </Flex>
 
-        <Flex w={{ base: "100%", md: "50%" }}>
-          <Image
-            src={colorMode === "light" ? Chears : ChearsRosat}
-            alt="chears"
-          />
+        <Flex justify={{ base: "center", md: "start" }} my={{ base: "15%" }}>
+          <Link href="https://wa.me/34698458286">
+            <Button variant="outline" p={6}>
+              <Text color={theme.accent} fontWeight={600}>
+                Contact us
+              </Text>
+            </Button>
+          </Link>
         </Flex>
       </Flex>
 
-      {/* <SectionTwo /> */}
-    </Container>
+      <Flex w={{ base: "100%", md: "50%" }}>
+        <Image
+          src={colorMode === "light" ? Chears : ChearsRosat}
+          alt="chears"
+        />
+      </Flex>
+    </Flex>
   );
 }

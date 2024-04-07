@@ -5,6 +5,8 @@ import Image from "next/image";
 import Logo4 from "../../assets/logo/chinchin_logo_green.svg";
 import Logo6 from "../../assets/logo/chinchin_logo_rosat.svg";
 import { useTheme } from "@/hooks/useTheme";
+import { Menu } from "./menu/Menu";
+import ModeButton from "./modeButton/ModeButton";
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -25,15 +27,14 @@ export default function Navbar() {
         <Image src={colorMode === "light" ? Logo4 : Logo6} alt="logo" />
       </Flex>
 
-      <Box>
-        <Button variant="outline" onClick={toggleColorMode}>
-          {colorMode === "light" ? (
-            <MoonIcon boxSize={4} />
-          ) : (
-            <SunIcon boxSize={4} />
-          )}
-        </Button>
-      </Box>
+      <Flex>
+        <Box display={{ base: "none", md: "block" }}>
+          <ModeButton />
+        </Box>
+        <Box>
+          <Menu />
+        </Box>
+      </Flex>
     </Flex>
   );
 }
