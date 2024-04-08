@@ -1,4 +1,4 @@
-export const services = [
+export const services: Service[] = [
   {
     id: 1,
     title: "Private bartender",
@@ -15,7 +15,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Team buildings & workshops",
+    title: "Cocktail workshops",
     groupSize: { min: 5, max: 20 },
     price: { price: 50, condition: "€/person" },
     header: "Have fun with your friends or doing cocktails together.",
@@ -29,3 +29,11 @@ export const services = [
       "Enjoy your favorite cocktails at your party, already mixed and botlled, just put on the ice. ",
   },
 ];
+
+export interface Service {
+  id: number;
+  title: string;
+  groupSize: { min: number; max: number };
+  price: { price: number; condition: string };
+  header: string;
+}

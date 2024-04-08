@@ -31,6 +31,7 @@ export const defaultColors = {
   errorText: "#9B2C2C",
   successText: "#276749",
   radius: "0.375rem",
+  darkText: "#000000",
 };
 
 export const themeDark = {
@@ -47,7 +48,7 @@ export const themeDark = {
   buttonBg: "#1E1E1E",
   accent: "#f1d2d3",
   accentPale: "#f1d2d3",
-  shadow: "transparent",
+  shadow: " -1px 22px 52px -10px rgba(241,210,211,0.48);",
   border: "rgba(207, 219, 213, 0.15)",
   borderDark: "rgba(207, 219, 213, 0.15)",
   ...defaultColors,
@@ -67,7 +68,7 @@ export const themeLight = {
   buttonBg: "#FFFFFF",
   accent: "#af9c30",
   accentPale: "#af9c307a",
-  shadow: "rgba(153, 155, 168, 0.25)",
+  shadow: "-1px 9px 36px -3px rgba(153, 155, 168, 0.25)",
   border: "rgba(207, 219, 213, 0.6)",
   borderDark: "transparent",
   ...defaultColors,
