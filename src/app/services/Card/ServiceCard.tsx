@@ -1,4 +1,4 @@
-import { Service } from "@/const/types";
+import { Service } from "@/app/const/data";
 import { useTheme } from "@/hooks/useTheme";
 import {
   Box,
@@ -44,15 +44,15 @@ export const ServiceCard = ({ item }: Props) => {
         flexDirection="column"
         justifyContent="space-between"
       >
-        <Text>{item.description}</Text>
+        <Text>{item.header}</Text>
 
         <Box>
           <Divider borderColor={theme.accent} variant="dashed" my={2} />
           <Text>
-            Group: {item.min_group} - {item.max_group} persons.
+            Group: {item.groupSize.min} - {item.groupSize.max} persons.
           </Text>
           <Text>
-            Price from: {item.price} {item.price_condition}
+            Price from: {item.price.price} {item.price.condition}
           </Text>
           <Divider borderColor={theme.accent} variant="dashed" my={2} />
         </Box>

@@ -1,4 +1,4 @@
-import { Container } from "@chakra-ui/layout";
+import { Container } from "@chakra-ui/react";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
