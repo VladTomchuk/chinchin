@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import { customTheme } from "@/styles/theme";
 import "@/styles/theme.css";
 import { ColorModeScript } from "@chakra-ui/react";
@@ -21,9 +21,7 @@ export default function RootLayout({
         />
         <StoreProvider>
           <Providers>
-            <header>
-              <Navbar />
-            </header>
+            <header>{/* <Navbar /> */}</header>
             <main>{children}</main>
           </Providers>
           <SessionProvider />
