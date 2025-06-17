@@ -7,6 +7,7 @@ import Logo6 from "../../assets/logo/chinchin_logo_rosat.svg";
 import { useTheme } from "@/hooks/useTheme";
 import { Menu } from "./menu/Menu";
 import ModeButton from "./modeButton/ModeButton";
+import Link from "next/link";
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -22,9 +23,12 @@ export default function Navbar() {
       justify="space-between"
       px={5}
       py={3}
+      zIndex={999}
     >
       <Flex boxSize={50}>
-        <Image src={colorMode === "light" ? Logo4 : Logo6} alt="logo" />
+        <Link href="/">
+          <Image src={colorMode === "light" ? Logo4 : Logo6} alt="logo" />
+        </Link>
       </Flex>
 
       <Flex>

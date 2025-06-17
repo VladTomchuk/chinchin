@@ -1,18 +1,10 @@
 "use client";
+import { useTheme } from "@/hooks/useTheme";
+import { Button, Flex, Link, Text, useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import Chears from "../assets/imagesSVG/chears_green.svg";
 import ChearsRosat from "../assets/imagesSVG/chears_rosat.svg";
-import SectionTwo from "@/components/Home/SectionTwo";
-import { useTheme } from "@/hooks/useTheme";
-import {
-  Button,
-  Container,
-  Flex,
-  Link,
-  Text,
-  useColorMode,
-} from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
