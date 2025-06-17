@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/Navbar";
 import { customTheme } from "@/styles/theme";
 import "@/styles/theme.css";
 import { ColorModeScript } from "@chakra-ui/react";
